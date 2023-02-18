@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/news.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="https://i.pinimg.com/originals/06/69/78/066978fc896493f1353c389b7a026aaf.jpg"
+            alt=""
+            class="img-logo"
+          />
+        </div>
+
+        <ul class="main-ul">
+          <li class="main-li"><a href="" class="main-a">Home</a></li>
+          <li class="main-li"><a href="" class="main-a">Services</a></li>
+          <li class="main-li">
+            <a href="" class="main-a">Recycling methods</a>
+          </li>
+          <li class="main-li"><a href="" class="main-a">News</a></li>
+          <li class="main-li">
+            <a href="" class="main-a">Payment and billing </a>
+          </li>
+          <li class="main-li"><a href="" class="main-a">Awareness</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="newsGrid"></div>
+    <div class="footer">
+      <footer class="main-footer">
+        <div>
+          <img
+            src="https://o.remove.bg/downloads/3fc7fad1-92dc-465c-9ba2-2a666818099b/066978fc896493f1353c389b7a026aaf-removebg-preview.png"
+            alt=""
+            class="img-logo-footer"
+          />
+        </div>
+        <div class="newsLetter">
+          <h1>Signup to our News Letter</h1>
+          <input type="text" />
+        </div>
+        <div>
+          <h1 class="contact-us-h1">Quick Links</h1>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    let newsPosts = [
+      {
+        image:
+          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
+        header: "News Header",
+        snippet:
+          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+      },
+      {
+        image:
+          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
+        header: "News Header",
+        snippet:
+          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+      },
+      {
+        image:
+          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
+        header: "News Header",
+        snippet:
+          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+      },
+      {
+        image:
+          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
+        header: "News Header",
+        snippet:
+          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+      },
+    ];
+    newsGrid = document.querySelector(".newsGrid");
+    newsLength = newsPosts.length;
+    console.log(newsGrid);
+    newsPosts.map((news) => {
+      return (newsGrid.innerHTML += `
+        <div class="newsBox">
+        <div class="newsImage">
+          <img
+            src="${news.image}"
+
+          />
+        </div>
+        <div class="newsContent">
+          <h1>${news.header}</h1>
+          <p>${news.snippet}</p>
+          <button class="btn-main">Read More</button>
+        </div>
+      </div>
+      `);
+    });
+  </script>
+</html>

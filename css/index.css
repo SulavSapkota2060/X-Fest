@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  background-color: #ebfbee;
+}
+
+/* Button */
+.btn-main {
+  background-color: #087f5b;
+  color: #ffffff;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  font-size: 1.6rem;
+}
+
+/* News Box */
+
+.newsBox {
+  background-color: white;
+  border: 1px solid #eee;
+  margin: auto;
+  box-shadow: 10px 10px 10px #dfdfdf;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 22vw;
+  height: 55vh;
+  margin: 10px;
+}
+
+.newsBox:hover {
+  transform: translateY(-20px);
+}
+
+.newsBox .newsImage {
+  height: 70%;
+  overflow: hidden;
+}
+.newsBox .newsImage img {
+  object-fit: cover;
+}
+
+.newsBox .newsContent {
+  text-align: center;
+  padding: 20px;
+}
+
+.newsBox .newsContent h1 {
+  font-size: 3rem;
+  color: #2b8a3e;
+}
+
+.newsBox .newsContent p {
+  color: #8c8c8c;
+  margin: 10px;
+}
+
+/* Navigation Bar */
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.main-header {
+  background-color: #087f5b;
+  height: 10rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-ul {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+.main-a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin-right: 2.4rem;
+  color: white;
+}
+.main-li {
+  list-style: none;
+}
+.img-logo {
+  width: 30%;
+  float: left;
+}
+
+/* Footer CSS */
+
+.main-footer {
+  display: flex;
+  background-color: #087f5b;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 10rem;
+}
+
+.main-footer input {
+  border: 1px solid #087f5b;
+  padding: 10px;
+}
+
+.main-footer input:focus {
+  border: 1px solid #087f5b;
+}
