@@ -1,0 +1,52 @@
+.our-services {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 2.4rem;
+  text-decoration: underline;
+}
+.box-1 img {
+  height: 100%;
+}
+
+.box-1 {
+  background-color: white;
+  border-left: 5px solid #087f5b;
+  /* border-radius: 12px; */
+  height: 34rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  width: 80%;
+  margin: 6rem auto;
+  border-radius: 9px;
+}
+.img-box-1 {
+  width: 100%;
+}
+.h2-box-1 {
+  font-size: 3.2rem;
+}
+.testonimal-box {
+  margin-top: 2.4rem;
+}
+.testonimals-box {
+  font-size: 1.8rem;
+}
+.testonimal-box h1 {
+  color: #03694a;
+  margin: 20px 0px;
+}
+.testonimal-box blockquote {
+  color: #989898;
+}
+
+.btn-learn-more {
+  background-color: #087f5b;
+  padding: 1.4rem 2.8rem;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  border: none;
+  margin-top: 3.2rem;
+  cursor: pointer;
+}

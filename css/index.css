@@ -11,6 +11,58 @@ html {
   background-color: #ebfbee;
 }
 
+/*Home Page*/
+.main {
+  /* margin-top: 24rem; */
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.h1-slogan {
+  font-size: 3.4rem;
+  text-align: center;
+  width: 100%;
+  /* margin: 0 auto; */
+  margin: 28rem 0 auto;
+  color: #ffffff;
+
+  font-size: 58px;
+  font-weight: 600;
+}
+.main-p {
+  line-height: 1.6;
+  font-size: 2rem;
+}
+.container-1-box {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.btn-main-1 {
+  background-color: #087f5b;
+  color: #ffffff;
+  padding: 1.6rem 2.8rem;
+  border: none;
+  /* margin-top: 24rem; */
+  font-size: 1.6rem;
+  width: 100%;
+
+  /* border-radius: 9px; */
+}
+.main .homeButton {
+  width: 10%;
+  margin: 40px auto;
+}
+
 /* Button */
 .btn-main {
   background-color: #087f5b;
@@ -107,13 +159,29 @@ html {
   justify-content: space-evenly;
   color: white;
   margin-top: 10rem;
+  padding: 3rem;
+}
+.main-footer .newsLetter {
+  border: 1px solid red;
 }
 
 .main-footer input {
   border: 1px solid #087f5b;
   padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .main-footer input:focus {
-  border: 1px solid #087f5b;
+  border: none;
+  outline: navajowhite;
+}
+
+.main-footer .col1 {
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.main-footer .col1 img {
+  width: 30%;
 }

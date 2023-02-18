@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+
+    <body>
+          <header class="main-header">
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="https://i.pinimg.com/originals/06/69/78/066978fc896493f1353c389b7a026aaf.jpg"
+            alt=""
+            class="img-logo"
+          />
+        </div>
+
+        <ul class="main-ul">
+          <li class="main-li"><a href="" class="main-a">Home</a></li>
+          <li class="main-li"><a href="" class="main-a">Services</a></li>
+          <li class="main-li">
+            <a href="" class="main-a">Recycling methods</a>
+          </li>
+          <li class="main-li"><a href="" class="main-a">News</a></li>
+          <li class="main-li">
+            <a href="" class="main-a">Payment and billing </a>
+          </li>
+          <li class="main-li"><a href="" class="main-a">Awareness</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <div class="section-services">
+      <h1 class="our-services">Our Services</h1>
+
+      <div class="container-services">
+       
+      </div>
+
+
+      <script>
+        let services = [
+            {
+                image:"https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/4/Desk/2021_4$largeimg_548047706.JPEG",
+                serviceType:"Door to Door Garbage Collection",
+                cost:"xx",
+                details:"Our agency is now providing door-door garbage collection service. The trained professionals visit your specificied location every morning to collect the garbage."
+            },
+            {
+                image:"",
+                serviceType:"A",
+                cost:"xx",
+                details:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+            },
+            {
+                image:"",
+                serviceType:"A",
+                cost:"xx",
+                details:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+            }
+        ]
+
+        let servicesDiv = document.querySelector(".container-services")
+        
+        services.map((service =>{
+            servicesDiv.innerHTML  += `
+             <div class="box-1">
+          <img src="${service.image}" alt="" / class="img-box-1">
+
+          <div class="testonimal-box">
+            <h1 class="h2-box-1">${service.serviceType}</h1>
+            <blockquote class="testonimals-box">
+              ${service.details}
+            </blockquote>
+            <h4>$${service.cost}</h4>
+            <div class="btn-learn-more-div">
+              <button class="btn-learn-more">Learn More ↓</button>
+            </div>
+          </div>
+        </div>`
+        }))
+
+
+
+
+      </script>
+
+    </body>
+</html>
