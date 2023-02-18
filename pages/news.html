@@ -2,92 +2,99 @@
   <head>
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/news.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <div class="logo">
           <img
-            src="https://i.pinimg.com/originals/06/69/78/066978fc896493f1353c389b7a026aaf.jpg"
+            src="../images/logo.png"
             alt=""
             class="img-logo"
           />
         </div>
 
         <ul class="main-ul">
-          <li class="main-li"><a href="" class="main-a">Home</a></li>
-          <li class="main-li"><a href="" class="main-a">Services</a></li>
           <li class="main-li">
-            <a href="" class="main-a">Recycling methods</a>
+            <a href="./index.html" class="main-a">Home</a>
           </li>
-          <li class="main-li"><a href="" class="main-a">News</a></li>
           <li class="main-li">
-            <a href="" class="main-a">Payment and billing </a>
+            <a href="./services.html" class="main-a">Services</a>
           </li>
-          <li class="main-li"><a href="" class="main-a">Awareness</a></li>
+          <li class="main-li">
+            <a href="./recycling.html" class="main-a">Recycling</a>
+          </li>
+          <li class="main-li"><a href="./news.html" class="main-a">News</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="newsGrid"></div>
-    <div class="footer">
+  <div class="footer">
       <footer class="main-footer">
-        <div>
+        <div class="col1">
           <img
-            src="https://o.remove.bg/downloads/3fc7fad1-92dc-465c-9ba2-2a666818099b/066978fc896493f1353c389b7a026aaf-removebg-preview.png"
+            src="../images/logo.png"
             alt=""
             class="img-logo-footer"
           />
+          <h1 class="footer-name">Gem cleaners</h1>
+          <p class="slogan-company">Cleaning the town</p>
         </div>
+
         <div class="newsLetter">
-          <h1>Signup to our News Letter</h1>
+          <h1 class="sign-up">Signup to our News Letter</h1>
           <input type="text" />
         </div>
-        <div>
+
+        <div class="quick-links">
           <h1 class="contact-us-h1">Quick Links</h1>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-twitter"></i>
-          <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-          </ul>
+          <div class="quick-links-container">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+          </div>
         </div>
       </footer>
     </div>
+  </div>
   </body>
 
   <script>
     let newsPosts = [
       {
         image:
-          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
-        header: "News Header",
+          "https://www.minnpost.com/wp-content/uploads/2023/02/GarbageTruckExitingAlley940.png?fit=940%2C675&strip=all",
+        header:
+          "For years, St. Paul took a hands-off approach to trash collection. Now, the city might start buying garbage trucks",
         snippet:
-          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+          "City officials are considering hiring crews and buying trucks to collect trash in some neighborhoods.",
       },
       {
         image:
-          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
-        header: "News Header",
+          "https://www.myeastkootenaynow.com/wp-content/uploads/2020/03/garbage-can-trash-recycling-bin-waste-Pixabay-Mar-25-2020-768x576.jpg",
+        header: "City issues reminder to keep garbage collection areas clear",
         snippet:
-          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+          "The City of Cranbrook says residents need to make sure they’re keeping garbage collection areas clear to ensure staff safety.",
       },
       {
         image:
-          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
-        header: "News Header",
+          "https://cdn5-hosted.civiclive.com/userfiles/servers/server_16494932/image/government/departments/public%20works%20and%20utilities/recycling%20&%20garbage/img_2840.jpg   ",
+        header:
+          "No name on trash, no collection: Rule raises privacy concerns in Japanese city",
         snippet:
-          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+          "A municipal rule requiring people to write their names on the garbage bags they put out for collection has raised privacy concerns in one southwestern Japan city. ",
       },
       {
         image:
-          "https://www.sierraclub.org/sites/www.sierraclub.org/files/2019-7-Recycling-ph1-WB.jpg",
-        header: "News Header",
+          "https://www.vmcdn.ca/f/files/timminstoday/images/buildings/2020-06-09-city-hall-mh.jpg;w=960",
+        header: "City giving test run to some garbage pickup changes",
         snippet:
-          "random textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom textrandom text",
+          "Multiple changes brought to the garbage pickup policies has now been tested inside the valley",
       },
     ];
     newsGrid = document.querySelector(".newsGrid");

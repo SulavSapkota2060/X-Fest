@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/recycling.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt=""
+            class="img-logo"
+          />
+        </div>
+
+        <ul class="main-ul">
+          <li class="main-li">
+            <a href="./index.html" class="main-a">Home</a>
+          </li>
+          <li class="main-li">
+            <a href="./services.html" class="main-a">Services</a>
+          </li>
+          <li class="main-li">
+            <a href="./recycling.html" class="main-a">Recycling</a>
+          </li>
+          <li class="main-li"><a href="./news.html" class="main-a">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="recycling">
+      <div class="que">
+        <h1>How do recycle the waste?</h1>
+        <p>
+          It is and must be a concern for someone who produces wastes to know
+          how it is recycled
+        </p>
+      </div>
+    </div>
+
+    <div class="recycleRow"></div>
+<div class="footer">
+      <footer class="main-footer">
+        <div class="col1">
+          <img
+            src="../images/logo.png"
+            alt=""
+            class="img-logo-footer"
+          />
+          <h1 class="footer-name">Gem cleaners</h1>
+          <p class="slogan-company">Cleaning the town</p>
+        </div>
+
+        <div class="newsLetter">
+          <h1 class="sign-up">Signup to our News Letter</h1>
+          <input type="text" />
+        </div>
+
+        <div class="quick-links">
+          <h1 class="contact-us-h1">Quick Links</h1>
+          <div class="quick-links-container">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+    <script>
+      let recyclingMethods = [
+        {
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wysypisko.jpg/1200px-Wysypisko.jpg",
+          method: "Landfill",
+        },
+        {
+          image:
+            "https://www.environmentbuddy.com/wp-content/uploads/2020/02/Waste-incineration-pros-and-cons.jpeg",
+          method: "Incineration",
+        },
+        {
+          image:
+            "https://www.kenbay.com/wp-content/uploads/2021/07/commercial-trash-compactor.jpg",
+          method: "Waste Compaction",
+        },
+        {
+          image:
+            "https://www.bioenergyconsult.com/wp-content/uploads/2018/03/biogas-plant-rural-india.jpg",
+          method: "Biogas Generation",
+        },
+        {
+          image:
+            "https://post.healthline.com/wp-content/uploads/2021/06/compost-food-waste-1200x628-facebook.jpg",
+          method: "Composting",
+        },
+        {
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/7/79/Lombri-compostage.JPG",
+          method: "Vermi Composting",
+        },
+      ];
+
+      row = document.querySelector(".recycleRow");
+      recyclingMethods.map((method) => {
+        row.innerHTML += `
+         <div class="recycleColumn">
+              <img
+                src=${method.image}
+                alt=${method.method}
+                style={{ width: "100%" }}
+              />
+              <div class="overlay">
+                <div class="text">
+                  ${method.method} 
+                </div>
+              </div>
+            </div>
+
+        `;
+      });
+    </script>
+  </body>
+</html>

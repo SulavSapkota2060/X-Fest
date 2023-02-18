@@ -1,69 +1,104 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/services.css">
-        <link rel="stylesheet" href="../css/index.css">
-    </head>
+  <head>
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <body>
-          <header class="main-header">
+  <body>
+    <header class="main-header">
       <nav class="main-nav">
         <div class="logo">
-          <img
-            src="https://i.pinimg.com/originals/06/69/78/066978fc896493f1353c389b7a026aaf.jpg"
-            alt=""
-            class="img-logo"
-          />
+          <img src="../images/logo.png" alt="" class="img-logo" />
         </div>
 
         <ul class="main-ul">
-          <li class="main-li"><a href="" class="main-a">Home</a></li>
-          <li class="main-li"><a href="" class="main-a">Services</a></li>
           <li class="main-li">
-            <a href="" class="main-a">Recycling methods</a>
+            <a href="./index.html" class="main-a">Home</a>
           </li>
-          <li class="main-li"><a href="" class="main-a">News</a></li>
           <li class="main-li">
-            <a href="" class="main-a">Payment and billing </a>
+            <a href="./services.html" class="main-a">Services</a>
           </li>
-          <li class="main-li"><a href="" class="main-a">Awareness</a></li>
+          <li class="main-li">
+            <a href="./recycling.html" class="main-a">Recycling</a>
+          </li>
+          <li class="main-li"><a href="./news.html" class="main-a">News</a></li>
         </ul>
       </nav>
     </header>
 
-        <div class="section-services">
+    <div class="section-services">
       <h1 class="our-services">Our Services</h1>
 
-      <div class="container-services">
-       
+      <div class="container-services"></div>
+      <div class="footer">
+        <footer class="main-footer">
+          <div class="col1">
+            <img src="../images/logo.png" alt="" class="img-logo-footer" />
+            <h1 class="footer-name">Gem cleaners</h1>
+            <p class="slogan-company">Cleaning the town</p>
+          </div>
+
+          <div class="newsLetter">
+            <h1 class="sign-up">Signup to our News Letter</h1>
+            <input type="text" />
+          </div>
+
+          <div class="quick-links">
+            <h1 class="contact-us-h1">Quick Links</h1>
+            <div class="quick-links-container">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+        </footer>
       </div>
+    </div>
 
+    <script>
+      let services = [
+        {
+          image:
+            "https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/4/Desk/2021_4$largeimg_548047706.JPEG",
+          serviceType: "Daily Door to Door Garbage Collection",
+          cost: "1500",
+          details:
+            "Our agency is now providing door-door garbage collection service. The trained professionals visit your specificied location every morning to collect the garbage.",
+        },
+        {
+          image:
+            "https://images.tribuneindia.com/cms/gall_content/2019/11/2019_11$largeimg09_Saturday_2019_085217429.jpg",
+          serviceType: "Weekly Door to Door Garbage Collection",
+          cost: "500",
+          details:
+            "This service is best for you if the waste is to be collected once every week from your home or workplace. Recommended for houses with very little garbage production.",
+        },
+        {
+          image:
+            "https://assets.kpmg.com/content/dam/kpmg/xx/images/2017/09/garbage-collection.jpg/jcr:content/renditions/original",
+          serviceType: "Daily Municipal Garbage Collection",
+          cost: "10,000",
+          details:
+            "Our agency is also providing a municipal service where the garbage is collected every day from a specified location of a community.",
+        },
+        {
+          image:
+            "https://www.startupdonut.co.uk/sites/default/files/rogue_waste_1825633037.jpg",
+          serviceType: "Weekly Municipal Garbage Collection",
+          cost: "5000",
+          details:
+            "For communities with a little population, our agency sends a garbage collection truck once every week to collect the wastes.",
+        },
+      ];
 
-      <script>
-        let services = [
-            {
-                image:"https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/4/Desk/2021_4$largeimg_548047706.JPEG",
-                serviceType:"Door to Door Garbage Collection",
-                cost:"xx",
-                details:"Our agency is now providing door-door garbage collection service. The trained professionals visit your specificied location every morning to collect the garbage."
-            },
-            {
-                image:"",
-                serviceType:"A",
-                cost:"xx",
-                details:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
-            },
-            {
-                image:"",
-                serviceType:"A",
-                cost:"xx",
-                details:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
-            }
-        ]
+      let servicesDiv = document.querySelector(".container-services");
 
-        let servicesDiv = document.querySelector(".container-services")
-        
-        services.map((service =>{
-            servicesDiv.innerHTML  += `
+      services.map((service) => {
+        servicesDiv.innerHTML += `
              <div class="box-1">
           <img src="${service.image}" alt="" / class="img-box-1">
 
@@ -72,18 +107,13 @@
             <blockquote class="testonimals-box">
               ${service.details}
             </blockquote>
-            <h4>$${service.cost}</h4>
+            <h1>NRS.${service.cost}</h1>
             <div class="btn-learn-more-div">
-              <button class="btn-learn-more">Learn More ↓</button>
+             <a href="./payment.html"><button class="btn-main">BOOK NOW ↓</button> </a>
             </div>
           </div>
-        </div>`
-        }))
-
-
-
-
-      </script>
-
-    </body>
+        </div>`;
+      });
+    </script>
+  </body>
 </html>

@@ -6,6 +6,7 @@
 }
 .box-1 img {
   height: 100%;
+  object-fit: cover;
 }
 
 .box-1 {
@@ -33,7 +34,7 @@
   font-size: 1.8rem;
 }
 .testonimal-box h1 {
-  color: #03694a;
+  color: #333;
   margin: 20px 0px;
 }
 .testonimal-box blockquote {
